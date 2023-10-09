@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Kalam';
+    src: url('../fonts/Kalam/Kalam-Regular.ttf'
+    )
+ 
+ }   
+
+
+*{
+    margin: 0%; 
+    padding: 0%;
+}
+
+h1{
+    padding-left: 28vw;
+    font-size: 6vh;
+    font-family: 'Alkatra';
+
+}
+
+
+header{
+    background-color: rgb(0, 255, 115);
+    height: 15vh;
+     font-family: 'Kalam';
+    text-align: center;
+
+   
+    border-radius: 0% 0% 20% 20%;
+    padding-top: 1%;    
+    margin-bottom: 7vh;
+   
+   
+    
+    
+    
+}
+.hipervinculo{
+     font-size: 30px;
+   
+    text-decoration: none;
+    padding-left: 2.5vw; 
+} 
+
+
+
+
+.ajo{
+    height: 45vh ;
+    width: 35vw;
+    
+}
+
+.alba{
+    height: 45vh;
+    width: 35vw;
+}
+
+.aloe{
+    height: 45vh;
+    width: 35vw;
+
+}
+
+.diente{
+    height: 45vh;
+    width: 35vw;
+}
+
+.lavanda{
+    height: 45vh;
+    width: 35vw;
+}
+
+.menta{
+    height: 45vh;
+    width: 35vw;
+}
+
+.oregano{
+    height: 45vh;
+    width: 35vw;
+}
+
+.perejil{
+    height: 45vh;
+    width: 35vw;
+}
+
+.romero{
+    height: 45vh;
+    width: 35vw;
+}
+
+.salvia{
+    height: 45vh;
+    width: 35vw;
+}
+
+.tomillo{
+    height: 45vh;
+    width: 35vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 26vw; */
+    gap: 15vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 20vh;
+    
+    
+    
+    
+}
+
+h1{
+    font-size: 50px;
+    padding-left: 15vw;
+    font-family: 'Courgette';
+}
+
+h2{
+    font-size: 35px;
+
+}
+
+.parrafo{
+    font-size: 25px;
+}
+
+
+footer{
+    background-color: rgb(0, 255, 115);
+    padding-top: 5vh; 
+}
+h4{
+    text-align: center;
+}
+
+.parrafo::first-letter{
+    color:blueviolet;
+    font-size: 3vw;
+}
