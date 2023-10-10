@@ -2,7 +2,6 @@
     font-family: 'Kalam';
     src: url('../fonts/Kalam/Kalam-Regular.ttf'
     )
- 
  }   
 
 
@@ -12,95 +11,29 @@
 }
 
 h1{
-    padding-left: 28vw;
+    text-align: center;
     font-size: 6vh;
-    font-family: 'Alkatra';
-
+    font-family: 'Kalam';
 }
 
 
 header{
     background-color: rgb(0, 255, 115);
-    height: 15vh;
-     font-family: 'Kalam';
+    height: 12vh;
+    font-family: 'Kalam';
     text-align: center;
-
-   
     border-radius: 0% 0% 20% 20%;
     padding-top: 1%;    
-    margin-bottom: 7vh;
-   
-   
-    
-    
-    
+    margin-bottom: 5vh;
 }
+
+
 .hipervinculo{
-     font-size: 30px;
-   
+    font-size: 30px;
     text-decoration: none;
     padding-left: 2.5vw; 
 } 
 
-
-
-
-.ajo{
-    height: 45vh ;
-    width: 35vw;
-    
-}
-
-.alba{
-    height: 45vh;
-    width: 35vw;
-}
-
-.aloe{
-    height: 45vh;
-    width: 35vw;
-
-}
-
-.diente{
-    height: 45vh;
-    width: 35vw;
-}
-
-.lavanda{
-    height: 45vh;
-    width: 35vw;
-}
-
-.menta{
-    height: 45vh;
-    width: 35vw;
-}
-
-.oregano{
-    height: 45vh;
-    width: 35vw;
-}
-
-.perejil{
-    height: 45vh;
-    width: 35vw;
-}
-
-.romero{
-    height: 45vh;
-    width: 35vw;
-}
-
-.salvia{
-    height: 45vh;
-    width: 35vw;
-}
-
-.tomillo{
-    height: 45vh;
-    width: 35vw;
-}
 
 .container{
     display: flex;
@@ -110,32 +43,25 @@ header{
     padding-left: 15vw;
     padding-right: 15vw;
     padding-bottom: 20vh;
-    
-    
-    
-    
 }
 
-h1{
-    font-size: 50px;
-    padding-left: 15vw;
-    font-family: 'Courgette';
-}
 
 h2{
     font-size: 35px;
+    color: green;
 
 }
 
 .parrafo{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
 footer{
     background-color: rgb(0, 255, 115);
-    padding-top: 5vh; 
+    margin-top: 3vh;
 }
+
 h4{
     text-align: center;
 }
@@ -143,4 +69,49 @@ h4{
 .parrafo::first-letter{
     color:blueviolet;
     font-size: 3vw;
+}
+
+
+.image-gallery {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+  }
+
+.image-container {
+    flex: 0 0 10vw;
+    scroll-snap-align: start;
+    position: relative;
+    margin-right: 1vw;
+  }
+  
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: rgba(0, 255, 0, 0.3);
+    font-size: 2vw;
+    color: black;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    cursor: pointer;
+  }
+  
+.image-container:hover .image-overlay {
+    opacity: 1;
+  }
+
+.plantas-img{
+    max-height: 30vh ;
+    max-width: 30vw;
+}
+
+#text-container{
+    margin-top: 3vh;
+    height: 12vh;
+
 }

@@ -1,9 +1,7 @@
 @font-face {
     font-family: 'Kalam';
     src: url('../fonts/Kalam/Kalam-Regular.ttf')
- 
 }   
-
 
 
 *{
@@ -12,31 +10,20 @@
 }
 
 
-
 header{
     background-color: rgb(0, 255, 115);
     height: 15vh;
-     font-family: 'Kalam';
+    font-family: 'Kalam';
     text-align: center;
-
-
-   
     border-radius: 0% 0% 20% 20%;
     padding-top: 1%;    
     margin-bottom: 7vh;
-   
-   
-    
-    
-    
 }
+
 .hipervinculo{
-     font-size: 30px;
-   
+    font-size: 30px;
     text-decoration: none;
     padding-left: 2.5vw; 
-    
-    
 } 
 
 
@@ -52,7 +39,6 @@ h4{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
@@ -84,9 +70,7 @@ h4{
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
-    text-align: center;
-
-    
+    text-align: center;   
 
 }
 
@@ -95,4 +79,35 @@ h4{
     opacity: 1;
     visibility: visible;
 
+}
+
+.recetas{
+    width: 100%;
+}
+.lista-receta {
+    width: 20vw;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+.item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.titulo {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.contenido-receta {
+    display: none;
+    padding: 10px;
+    width: 50vw;
+}
+
+.item.active + .contenido-receta {
+    display: block;
 }
