@@ -1,6 +1,7 @@
 .gotas{
-    background: #0b3c25 url('../img/fondo6.jpg') repeat;
-    animation: mover-gotas 100s linear infinite;
+    /* background: #0b3c25 url('../img/fondo6.jpg') repeat; */
+    background: #0b3c25 url('../img/fondo-patron-lirio.jpg') repeat;
+    animation: mover-gotas 300s linear infinite;
 }
 @keyframes mover-gotas{
     from{background-position: 0 0;}

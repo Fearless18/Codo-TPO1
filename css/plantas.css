@@ -19,7 +19,7 @@ h1{
 
 header{
     background-color: rgb(0, 255, 115);
-    height: 12vh;
+    height: 8vh;
     font-family: 'Kalam';
     text-align: center;
     border-radius: 0% 0% 20% 20%;
@@ -38,20 +38,24 @@ header{
 .container{
     display: flex;
     flex-direction: column;
+   
     /* padding-left: 26vw; */
     gap: 15vh;
     padding-left: 15vw;
     padding-right: 15vw;
-    padding-bottom: 20vh;
+    padding-bottom: 8vh;
 }
 
 
 h2{
-    font-size: 35px;
+    font-size: 2rem;
     color: green;
 
 }
 
+h3{
+    font-size: 1.5rem;
+}
 .parrafo{
     font-size: 20px;
 }
@@ -77,6 +81,7 @@ h4{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
 .image-container {
