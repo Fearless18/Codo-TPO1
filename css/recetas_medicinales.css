@@ -1,98 +1,41 @@
-@font-face {
-    font-family: 'Kalam';
-    src: url('../fonts/Kalam/Kalam-Regular.ttf')
-}   
-
-
-*{
-    margin: 0%;
-    padding: 0%;
-}
-
-
-header{
-    background-color: rgb(0, 255, 115);
-    height: 15vh;
-    font-family: 'Kalam';
-    text-align: center;
-    border-radius: 0% 0% 20% 20%;
-    padding-top: 1%;    
-    margin-bottom: 7vh;
-}
-
-.hipervinculo{
-    font-size: 30px;
-    text-decoration: none;
-    padding-left: 2.5vw; 
-} 
-
-
-footer{
-    background-color: rgb(0, 255, 115);
-    padding-top: 5vh; 
-}
-h4{
-    text-align: center;
-}
-
 .contenedor{
     width: 100%;
     display: flex;
-    justify-content: center;
-    height: 100vh;
+    /* justify-content: center; */
+    height: 80vh;
 }
 
-.contenedor figure{
+#tronco{
+    background-image: url("../img/tronco.png");
+    background-size: 80%;
+    background-repeat: round;
+    border-radius: 50% 50% 0% 0% / 50% 10% 0% 0%;
+    width: 13vw;
+    display: flex;
+    left: 20%;
+    
+}
+.recetas{ /* section */
     position: relative;
-    height: 250px;
-    width: 350px;
-    overflow: hidden;
-    border-radius: 6px ;
-    box-shadow: 0px 15px 25px  rgba(0,0,0,50);
-    cursor: pointer;
-
+    display: flex;
+    left: -2.5%;
 }
- 
-.contenedor figure img{
-     width: 100%;
-     height: 100%;
-     transition: all 500ms ease-out;
 
+.lista-receta {  /* Ul */
+    width: 20vw;
+    margin: 0 auto;
     
 }
 
-.contenedor figure .letra{
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    height:100%;
-    background:rgba(0,103,123.0.7) ;
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;   
-
-}
-
-
-.contenedor figure:hover > .letra{
-    opacity: 1;
-    visibility: visible;
-
-}
-
-.recetas{
-    width: 100%;
-}
-.lista-receta {
-    width: 20vw;
-    margin: 0 auto;
-    background-color: aqua;
-}
-
-.item {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+.item { /* li */
+    font-size: 1.4em;
+    padding: 10px ;
+    margin-top: 8px;
+    background-color: rgb(12, 146, 12);
+    border-radius: 2em 8em 9em 2em / 100% 80% 90% 60%;
+    border: none;
+    cursor: pointer;
+    list-style-type: none;
 }
 
 .titulo {
@@ -102,12 +45,20 @@ h4{
     cursor: pointer;
 }
 
-.contenido-receta {
+.contenido-receta { /* descripción receta */
+    font-size: 1.1em;
     display: none;
     padding: 10px;
+    margin-left: 10px;
+    border-radius: 2em 8em 9em 1em / 100% 80% 50% 60%;
     width: 50vw;
+    background-color: rgba(0, 255, 115, 0.5);
 }
 
 .item.active + .contenido-receta {
     display: block;
 }
+
+
+
+
