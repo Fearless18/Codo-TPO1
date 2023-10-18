@@ -61,4 +61,44 @@
 
 
 
+@media screen and (max-width:600px){
+  .item { 
+     font-size: 1em;
+     padding: 10px ;
+     margin-top: 8px;
+     background-color: rgb(12, 146, 12);
+     border-radius: 2em 8em 9em 2em / 100% 80% 90% 60%;
+     border: none;
+     cursor: pointer;
+     list-style-type: none;
+   } 
+  .recetas{
+    position: relative;
+    display: flex;
+    left: -2%;
+  }
+  .lista-receta {  /* Ul */
+    width: 30vw;
+    margin: 0 auto;
+    
+  }
+  
+  h3{
+    font-size: 90%;
+    
+  }
+  p{
+    font-size: 60%;
+  }
+  .contenido-receta { /* descripción receta */
+    font-size: 0.7em;
+    display: none;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 2em 8em 9em 1em / 100% 80% 50% 60%;
+    width: 50vw;
+    background-color: rgba(0, 255, 115, 0.5);
+}
+
+}
 
