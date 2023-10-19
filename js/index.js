@@ -1,7 +1,8 @@
 function mostrarTexto(text) {
     document.getElementById('text-container').innerHTML = text;
+}
 
-  }
+
 
 const items = document.querySelectorAll('.item');
 
