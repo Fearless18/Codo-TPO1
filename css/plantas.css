@@ -1,61 +1,64 @@
-
-
 .container{
-    display: flex;
-    flex-direction: column;
-   
-    /* padding-left: 26vw; */
-    gap: 15vh;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    padding-bottom: 8vh;
+  display: flex;
+  flex-direction: column;
+  
+  /* padding-left: 26vw; */
+  gap: 15vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-bottom: 8vh;
 }
 
+.parrafo {
+  height: 240px;
+  overflow: auto;
+}
 
 .image-gallery {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-  }
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 .image-container {
-    flex: 0 0 10vw;
-    scroll-snap-align: start;
-    position: relative;
-    margin-right: 1vw;
-  }
+  flex: 0 0 10vw;
+  scroll-snap-align: start;
+  position: relative;
+  margin-right: 1vw;
+}
   
 .image-overlay {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    background-color: rgba(0, 255, 0, 0.3);
-    font-size: 2vw;
-    color: black;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.5s;
-    cursor: pointer;
-  }
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  background-color: rgba(0, 255, 0, 0.3);
+  font-size: 2vw;
+  color: black;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
   
 .image-container:hover .image-overlay {
-    opacity: 1;
-  }
+opacity: 1;
+}
 
 .plantas-img{
-    max-height: 30vh ;
-    max-width: 30vw;
+  max-height: 30vh ;
+  max-width: 30vw;
 }
 
 #text-container{
-    margin-top: 3vh;
-    height: 12vh;
+  margin-top: 3vh;
+  height: 12vh;
 
 }
+
 h5{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.2em;

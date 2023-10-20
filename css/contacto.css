@@ -1,49 +1,3 @@
-@font-face {
-    font-family: 'Kalam';
-    src: url('../fonts/Kalam/Kalam-Regular.ttf')
- 
-}   
-
-
-*{
-    margin: 0%;
-    padding: 0%;
-}
-
-
-body {
-    /* background: #0b3c25 url('../img/fondo6.jpg') repeat; */
-    background: #0b3c25 url('../img/fondo-7.jpeg') repeat;
-    animation: mover-fondo 300s linear infinite;
-}
-
-@keyframes mover-fondo{
-    from{background-position: 0 0;}
-    to{background-position: 100vw 0;}
-}
-
-nav {
-    background-color: rgb(0, 255, 115);
-    height: 10vh;
-    font-family: 'Kalam';
-    font-size: 1.9vw;
-    text-align: center;
-    border-radius: 0% 0% 20% 20%;
-    padding-top: 1%;
-    margin-bottom: 5vh;
-}
-
-
-nav a {
-    font-size: 2vw;
-    text-decoration: none;
-    padding-left: 2.5vw;
-}
-
-footer{
-    background-color: rgb(0, 255, 115);
-    margin-top: 3vh; 
-}
 p {
     font-family: 'Times New Roman', Times, serif;
     background-color: #f9f9f9;
@@ -52,39 +6,28 @@ p {
     padding: 8px;
 }
 
-h1 {
-    font-family:Arial, Helvetica, sans-serif;
-    color: #3c00ff;
-    margin-left: 30vw;
-    padding-bottom: 1.5%;
+h2 {
+    text-align: center;
+    padding-left: 0%;
 }
 
-h4{
-    text-align: center;
-}
-h2{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    
-}
-
-h3{
+h3 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: 1.3em;
     color:darkslategrey;
     padding-bottom: 2%;
-}
+} 
 
 form {
-    max-width: 400px;
+    width: 90vw;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     background-color:gray;
     border: 3px solid black;
     border-radius: 20px;
-    
+    text-align: left;
 }
 
 label {
@@ -101,7 +44,7 @@ textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid rgb(204, 204, 204);
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 
 input[type="submit"] {
@@ -110,59 +53,47 @@ input[type="submit"] {
     color:black;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    margin-left:  11.5vw;
+    cursor: pointer;    
     margin-top: 4vh;
-    
     font-size: 1.2em;
-
 }
 
 input[type="submit"]:hover {
     background-color: #00b34b;
-    
-    
 }
 
 
-iframe{
-     margin-left: 33vw;
-     height: 450px;
-     width: 450px;
-     margin-bottom: 5vh;
+iframe {
+    height: 450px;
+    width: 600px;
+}
+
+.for{
+    grid-template-columns: repeat(1,min-max(68vw,1fr));
+    margin-bottom: 9vh;
+    text-align: center;
 }
 
 .formu-lario{
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    
 }
 
 
     
 @media screen and (max-width:600px){
     .for{
-        grid-template-columns: repeat(1,min-max(35vw,1fr))
-        
-        
+        grid-template-columns: repeat(1,min-max(35vw,1fr));
+        justify-content: center;
     }
-    input[type="submit"]{
-        margin-left: 20vw;
-        margin-right: 10%;
-    }
+
 
     form{
         width: 60vw;
     }
-    
-    .img{
-        width: 60vw;
-        height: 50vh;
-        margin-left: 17%;
-        margin-right: 0%;
-        
-        
-    }
+
     nav {
         height: 6vh;
         border-radius: 0% 0% 20% 20%;
@@ -181,29 +112,29 @@ iframe{
         margin-left: 0px;
     }
 
+    h2 {
+        font-size: 4vw;
+    }
+
     
     .reloj{
         height: 10px;
         margin-bottom: 7vh;
         margin-top: 0%;
     }  
+
+    iframe {
+        width: 90vw;
+        height: 50vh;
+    }
        
 }
 @media (min-width: 601px) and ( max-width:900px){
     
     .for{
-         grid-template-columns: repeat(1,min-max(35vw,1fr))
-
+         grid-template-columns: repeat(1,min-max(35vw,1fr));
+         text-align: none;
     }
-
-    .img{
-        width: 50vw;
-        height: 50vh;
-        margin-right: 0%;
-        margin-left: 25%;
-
-   
-    }    
 
     nav {
         height: 8vh;
@@ -224,9 +155,15 @@ iframe{
         margin-top: 1vh;
 
     }
-    input[type="submit"]{
-        margin-left: 20vw;
-        margin-right: 10%;
+
+    h2 {
+        font-size: 3vw;
+    }
+
+
+    iframe {
+        width: 90vw;
+        height: 50vh;
     }
 
     .reloj{
@@ -235,40 +172,3 @@ iframe{
 
     } 
 } 
-
-@media (min-width: 901px) and ( max-width:1900px){
-    .for{
-         grid-template-columns: repeat(1,min-max(68vw,1fr))
-    }
-
-    .img{
-        
-        margin-right: 0%;
-        margin-left: 33%;
-        margin-bottom: 5%;
-
-
-    }
-     input[type="submit"]{
-        margin-left: 16vw;
-        margin-right: 0%;
-    } 
-    nav {
-        height: 8vh;
-        border-radius: 0% 0% 20% 20%;
-        padding-top: 1%;
-        margin-bottom: 5vh;
-    }
-    
-    nav a{
-        font-size: 2.5vw;
-        padding-left: 3.5vw;
-    } 
-    h1{
-        text-align: center;
-        font-size: 4vw;
-        font-family: 'Kalam';
-        margin-left: 8vw;
-        padding-top: 0%;
-    }
-}   

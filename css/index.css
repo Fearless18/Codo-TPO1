@@ -33,10 +33,13 @@ nav {
 
 
 nav a {
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-decoration: none;
-    padding-left: 2.5vw;
+    padding-left: 3.5vw;
 }
+
+
+
 
 footer{
     background-color: rgb(0, 255, 115);
@@ -46,21 +49,23 @@ footer{
 
 h1{
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vw;
     font-family: 'Kalam';
 }
+
 
 h2{
     font-family: 'Alkatra';
     font-size: 2vw;
     padding-left: 15vw;
-    color: green;
-
+    color: green
 }
+
 
 h3{
     font-size: 1.5rem;
 }
+
 
 h4{
     text-align: center;
@@ -78,7 +83,7 @@ h4{
 
 .parrafo::first-letter{
     color:blueviolet;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 
@@ -89,22 +94,19 @@ h4{
 
 
 .foto {
-    background-image: url('');
     background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    height: 50vh;
+    background-size:contain;
+    background-position: center;
     width: 50vw;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-
+    height: 50vh;
+    /* margin-top: 5vh;
+    margin-bottom: 5vh; */
 
     animation-name: cambiar;
     animation-duration: 15s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
-    }
+}
     
 @keyframes cambiar{
     0%{background-image: url('../img/huerto1.jpg');  }  
@@ -114,23 +116,19 @@ h4{
     100%{background-image: url('../img/huerto1.jpg');}
     
 }
-.foto{
-    margin-left: 15%;
-}
+
 
 
 
 @media screen and (max-width: 600px) {
 
     .slider{
-            height: 300px;
-             
-            margin-right: 13%;
-        }
+        height: 30vh;
+    }
     .parrafo{
-            font-size: 1.2em;
-            margin-top: 1vh;
-        }
+        font-size: 1.2em;
+        margin-top: 1vh;
+    }
 
     nav {
         height: 6vh;
@@ -152,23 +150,20 @@ h4{
     
     .parrafo::first-letter{
         color:blueviolet;
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .foto{
         width: 90vw;
         height: 100%;
-        
-
     }
 }
 
 @media (min-width: 601px) and ( max-width:900px){ 
 
     .slider{
-            height: 300px;
-                 
-            margin-right: 13%;
+        height: 300px;
+        /* margin-right: 13%; */
     }
     
     
@@ -191,7 +186,7 @@ h4{
     }
     .parrafo{
         font-size: 1.2em;
-        margin-top: 10vh;
+        /* margin-top: 10vh; */
         
     }
     .parrafo::first-letter{
@@ -206,51 +201,3 @@ h4{
     
     }
 }
-
-@media (min-width: 901px) and ( max-width:1900px){
-    .slider{
-        height: 350px;
-         
-        margin-right: 13%;
-    }
-    
-    .parrafo{
-        font-size: 1.4em;
-        margin-top: 6vh;
-        
-    }
-    .parrafo::first-letter{
-        color:blueviolet;
-        font-size: 6vw;
-    }
-    .foto{
-        width: 90vw;
-        height: 60vh;
-        margin-left: 25vw;
-                
-    
-    }
-
-    h1{
-        text-align: center;
-        font-size: 4vw;
-        font-family: 'Kalam';
-        margin-top: 1vh;
-    }
-    nav {
-        height: 8vh;
-        border-radius: 0% 0% 20% 20%;
-        padding-top: 1%;
-        margin-bottom: 5vh;
-    }
-    
-    nav a{
-        font-size: 2.5vw;
-        padding-left: 3.5vw;
-    } 
-}
-/* .imag{
-    height: 50vh;
-    width: 50vw;
-} */
-
