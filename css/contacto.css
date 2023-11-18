@@ -77,11 +77,20 @@ iframe {
 .formu-lario{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    
+    align-items: baseline;    
 }
 
-
+.dolar{
+    color: white;
+    width: 10vw;
+    max-width: 200px;
+    float: right;
+    padding: 20px;
+    background-color:gray;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: right;
+}
     
 @media screen and (max-width:600px){
     .for{
