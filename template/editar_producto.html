@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ingresar_producto.css">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="icon" href="../img/2_aloevera2.ico">
+    
+
+    <link rel="stylesheet" href="../css/tabla_productos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="plantas.html">Plantas</a>
+            <a href="recetas_medicinales.html">Recetas medicinales</a>
+            <a href="curso.html">Curso</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    
+    </header>
+
+    <main>
+        <section>
+
+            <div class="container-form">
+                <form>
+                   
+                    <div>
+                        <label for="id">ID</label>
+                        <input type="number" name="id" id="id" disabled>
+                    </div>
+            
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+
+                    <div class="entrada">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" required>
+                    </div>
+
+                    <div class="entrada">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <!-- <div class="entrada">
+                        <label for="horario">Horario:</label>
+                        <input class="horario" type="horario" name="horario" id="horario" required>
+                    </div> -->
+                    <label for="">Horario:</label>
+                    <select class="horario" id="horario" name="horario" id="horario" required>
+                        <option value="Lunes - 10hs a 12hs">Lunes - 10hs a 12hs</option>
+                        <option value="Jueves - 18hs a 20hs">Jueves - 18hs a 20hs</option>
+                        <option value="Sabado - 10hs a 12hs">Sábado - 10hs a 12hs</option>
+                    </select><br><br>
+
+                    
+                    <button class="modificar" type="button" onclick="modificar()">Modificar</button>
+                     <!-- <button class="modificar" type="button"> -->
+                    <a class="modificar" href="tabla_productos.html">Cancelar</a></button> 
+                </form>
+          
+          
+              </div>
+
+        </section>
+    </main>
+
+    
+    <footer>
+        <h4>Derechos reservados ©2023</h4>
+        <img src="../img/instagram (1).png" alt="" style="width: 3vw; margin-left: 45vw;" >
+        <img src="../img/facebook.png" alt="Facebook" style="width: 3vw; margin-right: 45vw;">
+        
+    </footer>
+
+    <script src="../js/editar_producto.js"></script>
+    <script src="../js/datos_editar.js"></script>
+</body>
+</html>

@@ -38,7 +38,11 @@ nav a {
     padding-left: 3.5vw;
 }
 
-
+header span{
+    float: right;
+    color: rgb(0, 255, 115);
+    font-size: 1.5rem;
+}
 
 
 footer{
@@ -138,10 +142,13 @@ h4{
     }
 
     nav a{
+        padding-top: 1vh;
         font-size: 3.5vw;
         padding-left: 3.5vw;
     } 
     
+
+
     h1{
         text-align: center;
         font-size: 6vw;
@@ -157,6 +164,18 @@ h4{
         width: 90vw;
         height: 100%;
     }
+
+    .adm{
+        font-size: 12px;
+    }
+    footer{
+        background-color: rgb(0, 255, 115);
+        margin-top: 1.5vh;
+    }
+    h4{
+        font-size: 10px;
+    }
+    
 }
 
 @media (min-width: 601px) and ( max-width:900px){ 

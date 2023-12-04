@@ -19,9 +19,21 @@ h3 {
     padding-bottom: 2%;
 } 
 
-form {
-    /* width: 90vw; */
+/* form {
+    width: 90vw;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:gray;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: left;
+} */
+
+form{
+    /* width: 150vw; */
     width: 50vw;
+    /* max-width: 450px; */
     max-width: 450px;
     margin: 0 auto;
     padding: 20px;
@@ -33,6 +45,7 @@ form {
     height: auto;
 }
 
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -42,7 +55,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="number"],
-
+select,
 textarea {
     width: 90%;
     padding: 10px;
@@ -51,21 +64,62 @@ textarea {
     border-radius: 5px;    
 }
 
-input[type="submit"] {
-    padding: 10px;
+.modificar {
+    /* padding: 10px;
     background-color: #00bfff;
     color:black;
     border: none;
     border-radius: 5px;
     cursor: pointer;    
     margin-top: 4vh;
-    font-size: 20px;
+    font-size: 1.2em; */
+
+    padding: 0.2vw 0.3vh;
+    font-size: 1.6vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #00bfff;
+    color: black;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+.modificar:hover {
     background-color: #00b34b;
 }
+.boton{
+    /* padding: 10px;
+    background-color: #00bfff;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;    
+    
+    font-size: 1.2em;
+    
+    */
+    padding: 0.2vw 0.3vh;
+    font-size: 1.6vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #00bfff;
+    color: black;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    
+}
 
+.boton:hover{
+    background-color: #00b34b;
+}
+.horario{
+    font-size: 1.5rem;
+}
 
 iframe {
     height: 450px;
@@ -102,9 +156,10 @@ iframe {
         justify-content: center;
     }
 
+
     form{
         /* width: 150vw; */
-        width: 50vw;
+        width: 45vw;
         /* max-width: 450px; */
         max-width: 300px;
         margin: 0 auto;
@@ -114,8 +169,8 @@ iframe {
         border-radius: 20px;
         text-align: left;
         font-size: 1rem;
-        height: 65vh;
-        margin-bottom: 4vh;
+        height: 30vh;
+        margin-bottom: 20vh;
     }
 
     label {
@@ -123,37 +178,11 @@ iframe {
         margin-bottom: 5px;
         font-size: 10px;
         
-    } 
+    }
 
-
-
-    /* form {
-        width: 90vw;
-        width: 100vw;
-        max-width: 100px;
-        margin: 0 auto;
-        padding: 10px;
-        background-color:gray;
-        border: 3px solid black;
-        border-radius: 20px;
-        text-align: left;
-        font-size: 1rem;
-    } */
-    input[type="submit"] {
-        padding: 5px;
-        background-color: #00bfff;
-        color:black;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;    
-        margin-top: 4vh;
+    .horario{
         font-size: 10px;
     }
-    
-    input[type="submit"]:hover {
-        background-color: #00b34b;
-    }
-
     nav {
         height: 6vh;
         border-radius: 0% 0% 20% 20%;
@@ -161,9 +190,8 @@ iframe {
         margin-bottom: 5vh;
     }
 
-
     nav a{
-        font-size: 4vw;
+        font-size: 3.5vw;
         padding-left: 3.5vw;
     } 
 
@@ -173,13 +201,24 @@ iframe {
         margin-left: 0px;
     }
 
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+    width: 90%;
+    height: 1vh;
+    }
+
     h2 {
         font-size: 4vw;
     }
     h3{
         font-size: 20px;
     }
-    
+    .modificar{
+        font-size: 15px;
+    }
     .reloj{
         height: 10px;
         margin-bottom: 7vh;
@@ -190,20 +229,7 @@ iframe {
         width: 90vw;
         height: 50vh;
     }
-      
-    .dolar{
-        color: white;
-        width: 13vw;
-        max-width: 100px;
-        float: right;
-        padding: 10px;
-        background-color:gray;
-        border: 3px solid black;
-        border-radius: 10px;
-        text-align: right;
-        
-    }
-
+       
 }
 @media (min-width: 601px) and ( max-width:900px){
     

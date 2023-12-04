@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/ingresar_producto.css">
+    <link rel="stylesheet" href="../css/tabla_productos.css">
+    <link rel="icon" href="../img/2_aloevera2.ico" />
+
+    <title>Registrar</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="plantas.html">Plantas</a>
+            <a href="recetas_medicinales.html">Recetas medicinales</a>
+            <a href="curso.html">Curso</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    
+    </header>
+
+    <main>
+
+        <section>
+            <div class="container-form">
+
+                <form action="">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="">Horario:</label>
+                    <select class="horario" id="horario" name="horario" id="horario" required>
+                        <option value="Lunes - 10hs a 12hs">Lunes - 10hs a 12hs</option>
+                        <option value="Jueves - 18hs a 20hs">Jueves - 18hs a 20hs</option>
+                        <option value="Sabado - 10hs a 12hs">Sábado - 10hs a 12hs</option>
+                    </select><br><br>
+
+                    <div class="entrada">
+                        <button class="modificar" type="button" onclick="guardar()">Guardar</button>
+                        <a class="modificar" href="tabla_productos.html">Ver lista</a>
+                    </div> 
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h4>Derechos reservados ©2023</h4>
+        <img src="../img/instagram (1).png" alt="" style="width: 3vw; margin-left: 45vw;" >
+        <img src="../img/facebook.png" alt="Facebook" style="width: 3vw; margin-right: 45vw;">
+        
+    </footer>
+
+    <script src="../js/ingresar_producto.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

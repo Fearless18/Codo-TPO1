@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/tabla_productos.css">
+    <link rel="icon" href="../img/2_aloevera2.ico" />
+
+    <title>Curso - anotados</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="plantas.html">Plantas</a>
+            <a href="recetas_medicinales.html">Recetas medicinales</a>
+            <a href="curso.html">Curso</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    
+    </header>
+
+    <main>
+
+        <section class="container">
+            <div id="app" >
+
+                <!-- Botón Nuevo -->
+                <a class="nuevo" href="ingresar_producto.html">Nuevo</a>
+                <a class="nuevo" href="curso.html">Regresar</a>
+
+                <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando">
+                        <p>Cargando .....</p>
+
+                    </section>
+
+                    <section v-else>
+                        
+                        <div >
+                            <table class="tabla">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>E-mail</th>                                        
+                                        <th>Horario</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   
+                                    <tr v-for="producto in inscripciones">
+                                        <td>{{producto.id}}</td>
+                                        <td>{{producto.nombre}}</td>
+                                        <td>{{producto.apellido}}</td>
+                                        <td>{{producto.email}}</td>
+                                        <td>{{producto.horario}}</td>
+                                       
+                                        
+                                              
+                                        <td>
+                                            <button type="button"  v-on:click="eliminar(producto.id)">Eliminar</button>
+                                            <a class="boton" :href="'editar_producto.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&apellido='+producto.apellido+'&email='+producto.email +  '&horario='+producto.horario">Editar</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h4>Derechos reservados ©2023</h4>
+        <img src="../img/instagram (1).png" alt="" style="width: 3vw; margin-left: 45vw;" >
+        <img src="../img/facebook.png" alt="Facebook" style="width: 3vw; margin-right: 45vw;">
+        
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/tabla_productos.js"></script>
+</body>
+</html>
